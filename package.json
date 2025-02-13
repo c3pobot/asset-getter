@@ -1,0 +1,19 @@
+{
+  "name": "asset-getter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update": "chmod a+x updategitdependency.sh && ./updategitdependency.sh",
+    "build": "chmod a+x buildtestimage.sh && ./buildtestimage.sh c3pobot/asset-getter",
+    "prod": "chmod a+x buildprodimage.sh && ./buildprodimage.sh c3pobot/asset-getter"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "logger": "github:c3pobot/logger",
+    "node-fetch": "^2.6.7",
+    "rabbitmq-client": "^5.0.2"
+  }
+}
