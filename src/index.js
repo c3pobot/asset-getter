@@ -2,6 +2,7 @@
 const log = require('logger')
 const rabbitmq = require('./rabbitmq')
 const cmdQue = require('./cmdQue')
+require('./exchange')
 const CheckRabbitMQ = ()=>{
   try{
     if(!rabbitmq?.status) log.debug(`rabbitmq is not ready...`)
