@@ -71,10 +71,4 @@ const watch = async() =>{
     setTimeout(watch, 5000)
   }
 }
-module.exports.start = () =>{
-  try{
-    watch()
-  }catch(e){
-    log.error(e)
-  }
-}
+watch()
